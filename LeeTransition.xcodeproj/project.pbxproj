@@ -15,6 +15,16 @@
 		04641ABF221542EC0018B135 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641ABE221542EC0018B135 /* main.m */; };
 		04641AC9221542ED0018B135 /* LeeTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AC8221542ED0018B135 /* LeeTransitionTests.m */; };
 		04641AD4221542ED0018B135 /* LeeTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AD3221542ED0018B135 /* LeeTransitionUITests.m */; };
+		04641AE6221553780018B135 /* B7FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AE4221553780018B135 /* B7FirstViewController.m */; };
+		04641AE7221553780018B135 /* B7FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AE5221553780018B135 /* B7FirstViewController.xib */; };
+		04641AF02215554C0018B135 /* B7ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AEE2215554C0018B135 /* B7ContainerViewController.m */; };
+		04641AF12215554C0018B135 /* B7ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AEF2215554C0018B135 /* B7ContainerViewController.xib */; };
+		04641AF52215646E0018B135 /* B7SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AF32215646E0018B135 /* B7SecondViewController.m */; };
+		04641AF62215646E0018B135 /* B7SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AF42215646E0018B135 /* B7SecondViewController.xib */; };
+		04641AFA221642B30018B135 /* A7FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AF8221642B30018B135 /* A7FirstViewController.m */; };
+		04641AFB221642B30018B135 /* A7FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AF9221642B30018B135 /* A7FirstViewController.xib */; };
+		04641AFF221642C60018B135 /* A7SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AFD221642C60018B135 /* A7SecondViewController.m */; };
+		04641B00221642C60018B135 /* A7SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AFE221642C60018B135 /* A7SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,21 @@
 		04641ACF221542ED0018B135 /* LeeTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeeTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04641AD3221542ED0018B135 /* LeeTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionUITests.m; sourceTree = "<group>"; };
 		04641AD5221542ED0018B135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04641AE3221553780018B135 /* B7FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B7FirstViewController.h; sourceTree = "<group>"; };
+		04641AE4221553780018B135 /* B7FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B7FirstViewController.m; sourceTree = "<group>"; };
+		04641AE5221553780018B135 /* B7FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = B7FirstViewController.xib; sourceTree = "<group>"; };
+		04641AED2215554C0018B135 /* B7ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B7ContainerViewController.h; sourceTree = "<group>"; };
+		04641AEE2215554C0018B135 /* B7ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B7ContainerViewController.m; sourceTree = "<group>"; };
+		04641AEF2215554C0018B135 /* B7ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = B7ContainerViewController.xib; sourceTree = "<group>"; };
+		04641AF22215646E0018B135 /* B7SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B7SecondViewController.h; sourceTree = "<group>"; };
+		04641AF32215646E0018B135 /* B7SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B7SecondViewController.m; sourceTree = "<group>"; };
+		04641AF42215646E0018B135 /* B7SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = B7SecondViewController.xib; sourceTree = "<group>"; };
+		04641AF7221642B30018B135 /* A7FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A7FirstViewController.h; sourceTree = "<group>"; };
+		04641AF8221642B30018B135 /* A7FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A7FirstViewController.m; sourceTree = "<group>"; };
+		04641AF9221642B30018B135 /* A7FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = A7FirstViewController.xib; sourceTree = "<group>"; };
+		04641AFC221642C60018B135 /* A7SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A7SecondViewController.h; sourceTree = "<group>"; };
+		04641AFD221642C60018B135 /* A7SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A7SecondViewController.m; sourceTree = "<group>"; };
+		04641AFE221642C60018B135 /* A7SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = A7SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +126,8 @@
 		04641AAE221542E00018B135 /* LeeTransition */ = {
 			isa = PBXGroup;
 			children = (
+				04641AE2221552F70018B135 /* AfterIOS7 */,
+				04641AE1221552D10018B135 /* BeforeIOS7 */,
 				04641AAF221542E00018B135 /* AppDelegate.h */,
 				04641AB0221542E00018B135 /* AppDelegate.m */,
 				04641AB2221542E00018B135 /* ViewController.h */,
@@ -130,6 +157,35 @@
 				04641AD5221542ED0018B135 /* Info.plist */,
 			);
 			path = LeeTransitionUITests;
+			sourceTree = "<group>";
+		};
+		04641AE1221552D10018B135 /* BeforeIOS7 */ = {
+			isa = PBXGroup;
+			children = (
+				04641AE3221553780018B135 /* B7FirstViewController.h */,
+				04641AE4221553780018B135 /* B7FirstViewController.m */,
+				04641AE5221553780018B135 /* B7FirstViewController.xib */,
+				04641AF22215646E0018B135 /* B7SecondViewController.h */,
+				04641AF32215646E0018B135 /* B7SecondViewController.m */,
+				04641AF42215646E0018B135 /* B7SecondViewController.xib */,
+				04641AED2215554C0018B135 /* B7ContainerViewController.h */,
+				04641AEE2215554C0018B135 /* B7ContainerViewController.m */,
+				04641AEF2215554C0018B135 /* B7ContainerViewController.xib */,
+			);
+			path = BeforeIOS7;
+			sourceTree = "<group>";
+		};
+		04641AE2221552F70018B135 /* AfterIOS7 */ = {
+			isa = PBXGroup;
+			children = (
+				04641AF7221642B30018B135 /* A7FirstViewController.h */,
+				04641AF8221642B30018B135 /* A7FirstViewController.m */,
+				04641AF9221642B30018B135 /* A7FirstViewController.xib */,
+				04641AFC221642C60018B135 /* A7SecondViewController.h */,
+				04641AFD221642C60018B135 /* A7SecondViewController.m */,
+				04641AFE221642C60018B135 /* A7SecondViewController.xib */,
+			);
+			path = AfterIOS7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +291,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04641AFB221642B30018B135 /* A7FirstViewController.xib in Resources */,
 				04641ABC221542EC0018B135 /* LaunchScreen.storyboard in Resources */,
 				04641AB9221542EC0018B135 /* Assets.xcassets in Resources */,
+				04641AF12215554C0018B135 /* B7ContainerViewController.xib in Resources */,
+				04641AF62215646E0018B135 /* B7SecondViewController.xib in Resources */,
+				04641AE7221553780018B135 /* B7FirstViewController.xib in Resources */,
+				04641B00221642C60018B135 /* A7SecondViewController.xib in Resources */,
 				04641AB7221542E00018B135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +323,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04641AFA221642B30018B135 /* A7FirstViewController.m in Sources */,
 				04641AB4221542E00018B135 /* ViewController.m in Sources */,
 				04641ABF221542EC0018B135 /* main.m in Sources */,
+				04641AE6221553780018B135 /* B7FirstViewController.m in Sources */,
+				04641AF52215646E0018B135 /* B7SecondViewController.m in Sources */,
 				04641AB1221542E00018B135 /* AppDelegate.m in Sources */,
+				04641AFF221642C60018B135 /* A7SecondViewController.m in Sources */,
+				04641AF02215554C0018B135 /* B7ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 462946DA5G;
 				INFOPLIST_FILE = LeeTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 462946DA5G;
 				INFOPLIST_FILE = LeeTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

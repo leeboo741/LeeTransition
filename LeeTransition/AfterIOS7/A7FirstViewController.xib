@@ -26,11 +26,37 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQx-gE-hdS">
+                    <rect key="frame" x="0.0" y="438.5" width="187.5" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Present">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="presentAction:" destination="-1" eventType="touchUpInside" id="qTO-7c-FZu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4du-b6-Ds4">
+                    <rect key="frame" x="187.5" y="438.5" width="187.5" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Push">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="zti-cZ-FUf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="4du-b6-Ds4" firstAttribute="leading" secondItem="dQx-gE-hdS" secondAttribute="trailing" id="Fio-Xn-LKW"/>
+                <constraint firstItem="4du-b6-Ds4" firstAttribute="centerY" secondItem="dQx-gE-hdS" secondAttribute="centerY" id="Mnv-fw-n3O"/>
                 <constraint firstItem="Erm-HM-cpW" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="Q3G-Tz-a2J"/>
+                <constraint firstItem="dQx-gE-hdS" firstAttribute="top" secondItem="Erm-HM-cpW" secondAttribute="bottom" constant="80" id="Van-VD-2eZ"/>
                 <constraint firstItem="Erm-HM-cpW" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="f1L-yt-O5w"/>
+                <constraint firstItem="dQx-gE-hdS" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hZK-0c-rbW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4du-b6-Ds4" secondAttribute="trailing" id="oyL-lg-mi5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="centerX" secondItem="dQx-gE-hdS" secondAttribute="trailing" id="oyY-pB-9nl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>

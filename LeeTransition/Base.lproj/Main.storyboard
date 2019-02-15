@@ -42,10 +42,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS7-Fe-p3E">
-                                <rect key="frame" x="154" y="161" width="67" height="30"/>
+                                <rect key="frame" x="154" y="164" width="67" height="30"/>
                                 <state key="normal" title="AfterIOS7"/>
                                 <connections>
                                     <action selector="After7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4S-59-oxY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4O-Oq-eA4">
+                                <rect key="frame" x="142" y="214" width="91" height="30"/>
+                                <state key="normal" title="LeeTransition"/>
+                                <connections>
+                                    <action selector="LeeTransition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEJ-rk-Vwh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +60,9 @@
                         <constraints>
                             <constraint firstItem="uWC-di-RTp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Ss-Xn-myj"/>
                             <constraint firstItem="uWC-di-RTp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="GfW-A1-HFd"/>
-                            <constraint firstItem="fS7-Fe-p3E" firstAttribute="top" secondItem="uWC-di-RTp" secondAttribute="bottom" constant="17" id="kFe-G7-bEi"/>
+                            <constraint firstItem="G4O-Oq-eA4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c06-Dj-0ut"/>
+                            <constraint firstItem="G4O-Oq-eA4" firstAttribute="top" secondItem="fS7-Fe-p3E" secondAttribute="bottom" constant="20" id="gn0-Fa-5n0"/>
+                            <constraint firstItem="fS7-Fe-p3E" firstAttribute="top" secondItem="uWC-di-RTp" secondAttribute="bottom" constant="20" id="kFe-G7-bEi"/>
                             <constraint firstItem="fS7-Fe-p3E" firstAttribute="centerX" secondItem="uWC-di-RTp" secondAttribute="centerX" id="z5Q-Ux-brk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

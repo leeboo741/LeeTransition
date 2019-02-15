@@ -25,6 +25,14 @@
 		04641AFB221642B30018B135 /* A7FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AF9221642B30018B135 /* A7FirstViewController.xib */; };
 		04641AFF221642C60018B135 /* A7SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641AFD221642C60018B135 /* A7SecondViewController.m */; };
 		04641B00221642C60018B135 /* A7SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641AFE221642C60018B135 /* A7SecondViewController.xib */; };
+		04641B05221670A30018B135 /* BouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B04221670A30018B135 /* BouncePresentAnimation.m */; };
+		04641B07221691620018B135 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 04641B06221691620018B135 /* File */; };
+		04641B0A221698CF0018B135 /* SwipeInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B09221698CF0018B135 /* SwipeInteractiveTransition.m */; };
+		04641B0D22169AF70018B135 /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B0C22169AF70018B135 /* NormalDismissAnimation.m */; };
+		04641B122216A57F0018B135 /* LeeTransitionFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B102216A57F0018B135 /* LeeTransitionFromViewController.m */; };
+		04641B132216A57F0018B135 /* LeeTransitionFromViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641B112216A57F0018B135 /* LeeTransitionFromViewController.xib */; };
+		04641B172216A59B0018B135 /* LeeTransitionToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B152216A59B0018B135 /* LeeTransitionToViewController.m */; };
+		04641B182216A59B0018B135 /* LeeTransitionToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641B162216A59B0018B135 /* LeeTransitionToViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +84,19 @@
 		04641AFC221642C60018B135 /* A7SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A7SecondViewController.h; sourceTree = "<group>"; };
 		04641AFD221642C60018B135 /* A7SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A7SecondViewController.m; sourceTree = "<group>"; };
 		04641AFE221642C60018B135 /* A7SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = A7SecondViewController.xib; sourceTree = "<group>"; };
+		04641B03221670A30018B135 /* BouncePresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimation.h; sourceTree = "<group>"; };
+		04641B04221670A30018B135 /* BouncePresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimation.m; sourceTree = "<group>"; };
+		04641B06221691620018B135 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		04641B08221698CF0018B135 /* SwipeInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeInteractiveTransition.h; sourceTree = "<group>"; };
+		04641B09221698CF0018B135 /* SwipeInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractiveTransition.m; sourceTree = "<group>"; };
+		04641B0B22169AF70018B135 /* NormalDismissAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalDismissAnimation.h; sourceTree = "<group>"; };
+		04641B0C22169AF70018B135 /* NormalDismissAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
+		04641B0F2216A57F0018B135 /* LeeTransitionFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeTransitionFromViewController.h; sourceTree = "<group>"; };
+		04641B102216A57F0018B135 /* LeeTransitionFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionFromViewController.m; sourceTree = "<group>"; };
+		04641B112216A57F0018B135 /* LeeTransitionFromViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeeTransitionFromViewController.xib; sourceTree = "<group>"; };
+		04641B142216A59B0018B135 /* LeeTransitionToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeTransitionToViewController.h; sourceTree = "<group>"; };
+		04641B152216A59B0018B135 /* LeeTransitionToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionToViewController.m; sourceTree = "<group>"; };
+		04641B162216A59B0018B135 /* LeeTransitionToViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeeTransitionToViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +147,7 @@
 		04641AAE221542E00018B135 /* LeeTransition */ = {
 			isa = PBXGroup;
 			children = (
+				04641B0E2216A4680018B135 /* LeeTransition */,
 				04641AE2221552F70018B135 /* AfterIOS7 */,
 				04641AE1221552D10018B135 /* BeforeIOS7 */,
 				04641AAF221542E00018B135 /* AppDelegate.h */,
@@ -137,6 +159,7 @@
 				04641ABA221542EC0018B135 /* LaunchScreen.storyboard */,
 				04641ABD221542EC0018B135 /* Info.plist */,
 				04641ABE221542EC0018B135 /* main.m */,
+				04641B06221691620018B135 /* File */,
 			);
 			path = LeeTransition;
 			sourceTree = "<group>";
@@ -184,8 +207,43 @@
 				04641AFC221642C60018B135 /* A7SecondViewController.h */,
 				04641AFD221642C60018B135 /* A7SecondViewController.m */,
 				04641AFE221642C60018B135 /* A7SecondViewController.xib */,
+				04641B0122166A520018B135 /* VCTransitionAnimation */,
 			);
 			path = AfterIOS7;
+			sourceTree = "<group>";
+		};
+		04641B0122166A520018B135 /* VCTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				04641B03221670A30018B135 /* BouncePresentAnimation.h */,
+				04641B04221670A30018B135 /* BouncePresentAnimation.m */,
+				04641B0B22169AF70018B135 /* NormalDismissAnimation.h */,
+				04641B0C22169AF70018B135 /* NormalDismissAnimation.m */,
+				04641B08221698CF0018B135 /* SwipeInteractiveTransition.h */,
+				04641B09221698CF0018B135 /* SwipeInteractiveTransition.m */,
+			);
+			path = VCTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		04641B0E2216A4680018B135 /* LeeTransition */ = {
+			isa = PBXGroup;
+			children = (
+				04641B192216B58E0018B135 /* LeeTransition */,
+				04641B0F2216A57F0018B135 /* LeeTransitionFromViewController.h */,
+				04641B102216A57F0018B135 /* LeeTransitionFromViewController.m */,
+				04641B112216A57F0018B135 /* LeeTransitionFromViewController.xib */,
+				04641B142216A59B0018B135 /* LeeTransitionToViewController.h */,
+				04641B152216A59B0018B135 /* LeeTransitionToViewController.m */,
+				04641B162216A59B0018B135 /* LeeTransitionToViewController.xib */,
+			);
+			path = LeeTransition;
+			sourceTree = "<group>";
+		};
+		04641B192216B58E0018B135 /* LeeTransition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LeeTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +354,12 @@
 				04641AB9221542EC0018B135 /* Assets.xcassets in Resources */,
 				04641AF12215554C0018B135 /* B7ContainerViewController.xib in Resources */,
 				04641AF62215646E0018B135 /* B7SecondViewController.xib in Resources */,
+				04641B182216A59B0018B135 /* LeeTransitionToViewController.xib in Resources */,
 				04641AE7221553780018B135 /* B7FirstViewController.xib in Resources */,
+				04641B132216A57F0018B135 /* LeeTransitionFromViewController.xib in Resources */,
 				04641B00221642C60018B135 /* A7SecondViewController.xib in Resources */,
 				04641AB7221542E00018B135 /* Main.storyboard in Resources */,
+				04641B07221691620018B135 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,12 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04641B122216A57F0018B135 /* LeeTransitionFromViewController.m in Sources */,
 				04641AFA221642B30018B135 /* A7FirstViewController.m in Sources */,
 				04641AB4221542E00018B135 /* ViewController.m in Sources */,
 				04641ABF221542EC0018B135 /* main.m in Sources */,
 				04641AE6221553780018B135 /* B7FirstViewController.m in Sources */,
 				04641AF52215646E0018B135 /* B7SecondViewController.m in Sources */,
+				04641B0D22169AF70018B135 /* NormalDismissAnimation.m in Sources */,
+				04641B172216A59B0018B135 /* LeeTransitionToViewController.m in Sources */,
 				04641AB1221542E00018B135 /* AppDelegate.m in Sources */,
+				04641B0A221698CF0018B135 /* SwipeInteractiveTransition.m in Sources */,
+				04641B05221670A30018B135 /* BouncePresentAnimation.m in Sources */,
 				04641AFF221642C60018B135 /* A7SecondViewController.m in Sources */,
 				04641AF02215554C0018B135 /* B7ContainerViewController.m in Sources */,
 			);
@@ -504,13 +570,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 462946DA5G;
 				INFOPLIST_FILE = LeeTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -521,13 +588,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 462946DA5G;
 				INFOPLIST_FILE = LeeTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

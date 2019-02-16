@@ -33,6 +33,11 @@
 		04641B132216A57F0018B135 /* LeeTransitionFromViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641B112216A57F0018B135 /* LeeTransitionFromViewController.xib */; };
 		04641B172216A59B0018B135 /* LeeTransitionToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B152216A59B0018B135 /* LeeTransitionToViewController.m */; };
 		04641B182216A59B0018B135 /* LeeTransitionToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04641B162216A59B0018B135 /* LeeTransitionToViewController.xib */; };
+		04641B1C2217A2800018B135 /* LeeTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B1B2217A27F0018B135 /* LeeTransitionManager.m */; };
+		04641B242217B6EA0018B135 /* LeeTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B232217B6EA0018B135 /* LeeTransitionAnimation.m */; };
+		04641B272217B9100018B135 /* LeeTransitionTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B262217B9100018B135 /* LeeTransitionTestManager.m */; };
+		04641B2A2217BA190018B135 /* LeeInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B292217BA190018B135 /* LeeInteractiveTransition.m */; };
+		04641B302217E5530018B135 /* UIViewController+LeeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04641B2F2217E5530018B135 /* UIViewController+LeeTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +102,16 @@
 		04641B142216A59B0018B135 /* LeeTransitionToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeTransitionToViewController.h; sourceTree = "<group>"; };
 		04641B152216A59B0018B135 /* LeeTransitionToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionToViewController.m; sourceTree = "<group>"; };
 		04641B162216A59B0018B135 /* LeeTransitionToViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeeTransitionToViewController.xib; sourceTree = "<group>"; };
+		04641B1A2217A27F0018B135 /* LeeTransitionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeTransitionManager.h; sourceTree = "<group>"; };
+		04641B1B2217A27F0018B135 /* LeeTransitionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionManager.m; sourceTree = "<group>"; };
+		04641B222217B6EA0018B135 /* LeeTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeTransitionAnimation.h; sourceTree = "<group>"; };
+		04641B232217B6EA0018B135 /* LeeTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionAnimation.m; sourceTree = "<group>"; };
+		04641B252217B9100018B135 /* LeeTransitionTestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeTransitionTestManager.h; sourceTree = "<group>"; };
+		04641B262217B9100018B135 /* LeeTransitionTestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeTransitionTestManager.m; sourceTree = "<group>"; };
+		04641B282217BA190018B135 /* LeeInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeInteractiveTransition.h; sourceTree = "<group>"; };
+		04641B292217BA190018B135 /* LeeInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeInteractiveTransition.m; sourceTree = "<group>"; };
+		04641B2E2217E5530018B135 /* UIViewController+LeeTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LeeTransition.h"; sourceTree = "<group>"; };
+		04641B2F2217E5530018B135 /* UIViewController+LeeTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LeeTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,8 +257,50 @@
 		04641B192216B58E0018B135 /* LeeTransition */ = {
 			isa = PBXGroup;
 			children = (
+				04641B202217B6640018B135 /* Interactive */,
+				04641B1F2217B65D0018B135 /* Animation */,
+				04641B1E2217B6510018B135 /* Manager */,
+				04641B2E2217E5530018B135 /* UIViewController+LeeTransition.h */,
+				04641B2F2217E5530018B135 /* UIViewController+LeeTransition.m */,
 			);
 			path = LeeTransition;
+			sourceTree = "<group>";
+		};
+		04641B1E2217B6510018B135 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04641B1A2217A27F0018B135 /* LeeTransitionManager.h */,
+				04641B1B2217A27F0018B135 /* LeeTransitionManager.m */,
+				04641B212217B6B70018B135 /* SubManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		04641B1F2217B65D0018B135 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				04641B222217B6EA0018B135 /* LeeTransitionAnimation.h */,
+				04641B232217B6EA0018B135 /* LeeTransitionAnimation.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		04641B202217B6640018B135 /* Interactive */ = {
+			isa = PBXGroup;
+			children = (
+				04641B282217BA190018B135 /* LeeInteractiveTransition.h */,
+				04641B292217BA190018B135 /* LeeInteractiveTransition.m */,
+			);
+			path = Interactive;
+			sourceTree = "<group>";
+		};
+		04641B212217B6B70018B135 /* SubManager */ = {
+			isa = PBXGroup;
+			children = (
+				04641B252217B9100018B135 /* LeeTransitionTestManager.h */,
+				04641B262217B9100018B135 /* LeeTransitionTestManager.m */,
+			);
+			path = SubManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,7 +442,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04641B122216A57F0018B135 /* LeeTransitionFromViewController.m in Sources */,
+				04641B272217B9100018B135 /* LeeTransitionTestManager.m in Sources */,
 				04641AFA221642B30018B135 /* A7FirstViewController.m in Sources */,
+				04641B242217B6EA0018B135 /* LeeTransitionAnimation.m in Sources */,
 				04641AB4221542E00018B135 /* ViewController.m in Sources */,
 				04641ABF221542EC0018B135 /* main.m in Sources */,
 				04641AE6221553780018B135 /* B7FirstViewController.m in Sources */,
@@ -393,9 +452,12 @@
 				04641B0D22169AF70018B135 /* NormalDismissAnimation.m in Sources */,
 				04641B172216A59B0018B135 /* LeeTransitionToViewController.m in Sources */,
 				04641AB1221542E00018B135 /* AppDelegate.m in Sources */,
+				04641B2A2217BA190018B135 /* LeeInteractiveTransition.m in Sources */,
+				04641B1C2217A2800018B135 /* LeeTransitionManager.m in Sources */,
 				04641B0A221698CF0018B135 /* SwipeInteractiveTransition.m in Sources */,
 				04641B05221670A30018B135 /* BouncePresentAnimation.m in Sources */,
 				04641AFF221642C60018B135 /* A7SecondViewController.m in Sources */,
+				04641B302217E5530018B135 /* UIViewController+LeeTransition.m in Sources */,
 				04641AF02215554C0018B135 /* B7ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

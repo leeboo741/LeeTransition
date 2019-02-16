@@ -7,6 +7,7 @@
 //
 
 #import "LeeTransitionToViewController.h"
+#import "LeeTransition/UIViewController+LeeTransition.h"
 
 @interface LeeTransitionToViewController ()
 
@@ -16,17 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    if (self.navigationController) {
+        __weak typeof(self)weakSelf = self;
+        [self lee_registerBackInteractiveTransitionWithDirection:LeePanEdgeLeft eventBlcok:^{
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        }];
+    }else{
+        __weak typeof(self)weakSelf = self;
+        [self lee_registerBackInteractiveTransitionWithDirection:LeePanEdgeLeft eventBlcok:^{
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        }];
+    }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)backAction:(id)sender {
+    if (self.navigationController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
-*/
 
 @end

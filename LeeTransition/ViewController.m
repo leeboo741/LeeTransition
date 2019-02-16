@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BeforeIOS7/B7ContainerViewController.h"
 #import "AfterIOS7/A7FirstViewController.h"
+#import "LeeTransition/LeeTransitionFromViewController.h"
 
 @interface ViewController ()
 
@@ -29,6 +30,8 @@
     [self.navigationController pushViewController:a7FirstViewController animated:YES];
 }
 - (IBAction)LeeTransition:(id)sender {
+    LeeTransitionFromViewController * fromViewController = [[LeeTransitionFromViewController alloc]initWithNibName:@"LeeTransitionFromViewController" bundle:nil];
+    [self.navigationController pushViewController:fromViewController animated:YES];
 }
 
 

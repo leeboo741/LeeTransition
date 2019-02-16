@@ -54,18 +54,18 @@
     // UITransitionContextToViewControllerKey 转场目标VC
     // UITransitionContextFromViewControllerKey 转场出发VC
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    
+
     // 2. Set init frame for toVC
     // 设置转场目标VC初始位置
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
     toVC.view.frame = CGRectOffset(finalFrame, screenBounds.size.width, screenBounds.size.height);
-    
+
     // 3. Add toVC's view to containerView
     // 将转场目标VC添加至转场容器
     UIView *containerView = [transitionContext containerView];
     [containerView addSubview:toVC.view];
-    
+
     // 4. Do animate now
     // 执行动画
     NSTimeInterval duration = [self transitionDuration:transitionContext];
@@ -80,6 +80,63 @@
                          // 5. Tell context that we completed.
                          [transitionContext completeTransition:YES];
                      }];
+    
+    
+//    // 给个默认实现
+//    //获取目标动画的VC
+//    UIViewController *toVc = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+//    UIViewController *fromVc = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+//    UIView *containerView = [transitionContext containerView];
+//
+//    UIView *fromView = fromVc.view;
+//    UIView *toView = toVc.view;
+//
+//    //截图
+//    UIView *toView_snapView = [toView snapshotViewAfterScreenUpdates:YES];
+//
+//    CGRect left_frame = CGRectMake(0, 0, CGRectGetWidth(fromView.frame) / 2.0, CGRectGetHeight(fromView.frame));
+//    CGRect right_frame = CGRectMake(CGRectGetWidth(fromView.frame) / 2.0, 0, CGRectGetWidth(fromView.frame) / 2.0, CGRectGetHeight(fromView.frame));
+//    UIView *from_left_snapView = [fromView resizableSnapshotViewFromRect:left_frame
+//                                                      afterScreenUpdates:NO
+//                                                           withCapInsets:UIEdgeInsetsZero];
+//
+//    UIView *from_right_snapView = [fromView resizableSnapshotViewFromRect:right_frame
+//                                                       afterScreenUpdates:NO
+//                                                            withCapInsets:UIEdgeInsetsZero];
+//
+//    toView_snapView.layer.transform = CATransform3DMakeScale(0.7, 0.7, 1);
+//    from_left_snapView.frame = left_frame;
+//    from_right_snapView.frame = right_frame;
+//
+//    //将截图添加到 containerView 上
+//    [containerView addSubview:toView_snapView];
+//    [containerView addSubview:from_left_snapView];
+//    [containerView addSubview:from_right_snapView];
+//
+//    fromView.hidden = YES;
+//
+//    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//        //左移
+//        from_left_snapView.frame = CGRectOffset(from_left_snapView.frame, -from_left_snapView.frame.size.width, 0);
+//        //右移
+//        from_right_snapView.frame = CGRectOffset(from_right_snapView.frame, from_right_snapView.frame.size.width, 0);
+//
+//        toView_snapView.layer.transform = CATransform3DIdentity;
+//
+//    } completion:^(BOOL finished) {
+//        fromView.hidden = NO;
+//
+//        [from_left_snapView removeFromSuperview];
+//        [from_right_snapView removeFromSuperview];
+//        [toView_snapView removeFromSuperview];
+//
+//        if ([transitionContext transitionWasCancelled]) {
+//            [containerView addSubview:fromView];
+//        } else {
+//            [containerView addSubview:toView];
+//        }
+//        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+//    }];
 }
 
 @end
